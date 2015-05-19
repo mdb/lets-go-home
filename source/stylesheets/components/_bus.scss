@@ -1,12 +1,21 @@
+@include keyframes(bus-drive) {
+  to {
+    left: 50%;
+  }
+}
+
 img.bus {
+  position: absolute;
   width: 150px;
   display: block;
 
   &.bus-1 {
+    left: -200px;
+    @include animation(bus-drive 5s linear 1);
+    @include animation-fill-mode(forwards);
   }
 
   &.bus-2 {
-    position: absolute;
     right: 25%;
     top: 480px;
   }
