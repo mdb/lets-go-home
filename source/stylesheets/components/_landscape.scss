@@ -1,9 +1,19 @@
+@include keyframes(passing-country) {
+  to   { background-position: 0 0; }
+  from { background-position: 100% 0; }
+}
+
+@mixin animate-landscape {
+  @include animation(passing-country 5s linear 1 5s forwards);
+}
+
 section.landscape {
   margin-top: -50px;
   height: 450px;
   display: block;
   background: #deceb7 image-url('pattern_tile.png') repeat-x;
   background-size: 450px 450px;
+  @include animate-landscape;
 
   &:after {
     content: '.';
@@ -15,5 +25,6 @@ section.landscape {
     height: 27px;
     background: image-url('pattern_tile_bottom.png') repeat-x;
     background-size: 450px 27px;
+    @include animate-landscape;
   }
 }
