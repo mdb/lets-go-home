@@ -1,0 +1,19 @@
+section.landscape {
+  margin-top: -50px;
+  height: 450px;
+  display: block;
+  background: #deceb7 image-url('pattern_tile.png') repeat-x;
+  background-size: 450px 450px;
+
+  &:after {
+    content: '.';
+    text-indent: -5000px;
+    position: absolute;
+    top: 400px;
+    width: 100%;
+    display: block;
+    height: 27px;
+    background: image-url('pattern_tile_bottom.png') repeat-x;
+    background-size: 450px 27px;
+  }
+}
