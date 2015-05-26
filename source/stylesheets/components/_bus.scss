@@ -12,8 +12,9 @@ img.bus {
   &.bus-1 {
     top: 460px;
     left: 40%;
-    //@include animation(bus-drive 5s linear 1);
-    //@include animation-fill-mode(forwards);
+    @include animation(bus-drive 2s linear 1);
+    @include animation-fill-mode(forwards);
+    @include animation-delay(8s);
   }
 
   &.bus-2 {
