@@ -10,13 +10,14 @@ img.bus {
   display: block;
 
   &.bus-1 {
-    left: -200px;
-    @include animation(bus-drive 5s linear 1);
-    @include animation-fill-mode(forwards);
+    top: 460px;
+    left: 40%;
+    //@include animation(bus-drive 5s linear 1);
+    //@include animation-fill-mode(forwards);
   }
 
   &.bus-2 {
-    right: 25%;
-    top: 480px;
+    top: 475px;
+    @include arrival-home;
   }
 }

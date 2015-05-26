@@ -1,6 +1,7 @@
 section.road {
   height: 500px;
   display: block;
-  background: #bfaa99;
-  padding-top: 50px;
+  margin-top: $landscape_separator_height;
+  background: #bfaa99 image-url('road.png');
+  @include animate-landscape;
 }
