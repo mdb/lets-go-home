@@ -1,4 +1,14 @@
-button.play {
+@mixin button-pseudo-styles {
+  position: relative;
+  width: 0;
+  height: 0;
+  left: 40%;
+  right: 0;
+  top: -5px;
+  bottom: 0;
+}
+
+button {
   text-indent: -5000px;
   display: block;
   height: 100px;
@@ -22,15 +32,14 @@ button.play {
     outline: none;
   }
 
+  &:after, &:before {
+   @include button-pseudo-styles;
+   @include after-styles;
+  }
+}
+
+button.play {
   &:after {
-    @include after-styles;
-    position: relative;
-    width: 0;
-    height: 0;
-    left: 40%;
-    right: 0;
-    top: -5px;
-    bottom: 0;
     border: 25px solid transparent;
     border-bottom: 25px solid transparent;
     border-left: 25px solid #fff;
@@ -38,5 +47,28 @@ button.play {
 
   body.playing & {
     display: none;
+  }
+}
+
+button.rewind {
+  display: none;
+
+  &:before {
+    border-left: 10px solid #fff;
+    height: 50px;
+    left: 23px;
+    top: 25px;
+  }
+
+  &:after {
+    left: 13px;
+    top: -37px;
+    border: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid #fff;
+  }
+
+  body.played & {
+    display: block;
   }
 }
