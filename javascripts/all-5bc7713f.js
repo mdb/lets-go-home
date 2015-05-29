@@ -1,0 +1,1 @@
+!function(){var e=document.querySelector("body"),t=function(){e.className="playing",setTimeout(c,9e3)},n=function(){e.className=""},c=function(){e.className=e.className+" played"};document.querySelector("button.play").addEventListener("click",t),document.querySelector("button.rewind").addEventListener("click",n)}();
