@@ -15,7 +15,7 @@
 div.garage {
   @include garage-styles;
   right: 0;
-  top: 370px;
+  top: 475px;
   @include animation(garage-arrival 8s linear 1 0s forwards);
   @include animation-fill-mode(forwards);
 

@@ -1,21 +1,21 @@
 section.landscape {
   margin-top: -50px;
-  height: 450px;
+  height: 500px;
   display: block;
   background: #deceb7 image-url('pattern_tile.png') repeat-x;
-  background-size: 450px 450px;
+  background-size: 500px 500px;
   @include animate-landscape;
 
   &:after {
     content: '.';
     text-indent: -5000px;
     position: absolute;
-    top: 400px;
+    top: 450px;
     width: 100%;
     display: block;
     height: $landscape_separator_height;
     background: image-url('pattern_tile_bottom.png') repeat-x;
-    background-size: 450px 27px;
+    background-size: 500px 30px;
     @include animate-landscape;
   }
 }
