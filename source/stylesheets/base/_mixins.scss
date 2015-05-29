@@ -7,13 +7,3 @@
 @mixin animate-landscape {
   @include animation(passing-country 8s linear 1 0s forwards);
 }
-
-@include keyframes(arriving-home) {
-  0%   { right: -700px; }
-  80%  { right: 500px; }
-  100% { right: 500px; }
-}
-
-@mixin arrival-home {
-  @include animation(arriving-home 8s linear 1 0s forwards);
-}
