@@ -23,10 +23,8 @@ button.play {
   }
 
   &:after {
-    content: '.';
-    text-indent: -5000px;
-    display: block;
-    position:relative;
+    @include after-styles;
+    position: relative;
     width: 0;
     height: 0;
     left: 40%;

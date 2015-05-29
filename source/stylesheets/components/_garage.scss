@@ -22,10 +22,8 @@ div.garage {
   }
 
   &:after {
+    @include after-styles;
     @include garage-styles;
-    content: '.';
-    text-indent: -5000px;
-    display: block;
     background-position: -120px 0;
     right: -120px;
     z-index: 3;

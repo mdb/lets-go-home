@@ -9,3 +9,13 @@
     @include animation(passing-country 8s linear 1 0s forwards);
   }
 }
+
+@mixin hide-text {
+  text-indent: -5000px;
+}
+
+@mixin after-styles {
+  @include hide-text;
+  content: '.';
+  display: block;
+}
