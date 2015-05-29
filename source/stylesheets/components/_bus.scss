@@ -1,14 +1,11 @@
 @include keyframes(bus-drive) {
   70%  { left: 50%; }
-  80%  { left: 70%; }
-  100% { left: 80%; }
+  100% { left: 75%; }
 }
 
 @include keyframes(bus-two) {
   0%   { left: -100px; }
-  80%  { left: 50%; }
-  90%  { left: 50%; }
-  100% { left: 80%; }
+  100% { left: 75%; }
 }
 
 @mixin arrival-home {
@@ -24,7 +21,7 @@ img.bus {
     top: 460px;
     left: 40%;
     @include animation(bus-drive 2s linear 1 0s forwards);
-    @include animation-delay(8s);
+    @include animation-delay(5s);
   }
 
   &.bus-2 {
