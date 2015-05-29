@@ -20,12 +20,19 @@ img.bus {
   &.bus-1 {
     top: 560px;
     left: 40%;
-    @include animation(bus-drive 2s linear 1 0s forwards);
-    @include animation-delay(5s);
+
+    body.playing & {
+      @include animation(bus-drive 2s linear 1 0s forwards);
+      @include animation-delay(5s);
+    }
   }
 
   &.bus-2 {
     top: 575px;
-    @include arrival-home;
+    left: -150px;
+
+    body.playing & {
+      @include arrival-home;
+    }
   }
 }

@@ -5,5 +5,7 @@
 }
 
 @mixin animate-landscape {
-  @include animation(passing-country 8s linear 1 0s forwards);
+  body.playing & {
+    @include animation(passing-country 8s linear 1 0s forwards);
+  }
 }

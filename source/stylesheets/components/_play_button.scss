@@ -1,0 +1,44 @@
+button.play {
+  text-indent: -5000px;
+  display: block;
+  height: 100px;
+  width: 100px;
+  @include border-radius(100px);
+  z-index: 1000;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  border: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:after {
+    content: '.';
+    text-indent: -5000px;
+    display: block;
+    position:relative;
+    width: 0;
+    height: 0;
+    left: 40%;
+    right: 0;
+    top: -5px;
+    bottom: 0;
+    border: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid #fff;
+  }
+
+  body.playing & {
+    display: none;
+  }
+}

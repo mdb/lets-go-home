@@ -14,10 +14,12 @@
 
 div.garage {
   @include garage-styles;
-  right: 0;
+  right: -1100px;
   top: 475px;
-  @include animation(garage-arrival 8s linear 1 0s forwards);
-  @include animation-fill-mode(forwards);
+
+  body.playing & {
+    @include animation(garage-arrival 8s linear 1 0s forwards);
+  }
 
   &:after {
     @include garage-styles;
