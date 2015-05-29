@@ -14,4 +14,17 @@ div.garage {
   top: 370px;
   @include animation(garage-arrival 8s linear 1 0s forwards);
   @include animation-fill-mode(forwards);
+
+  &:after {
+    content: '.';
+    text-indent: -5000px;
+    display: block;
+    width: 350px;
+    height: 165px;
+    background: image-url('garage.png') no-repeat -120px 0;
+    background-size: 350px 165px;
+    position: absolute;
+    right: -120px;
+    z-index: 3;
+  }
 }
