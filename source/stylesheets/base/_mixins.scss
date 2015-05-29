@@ -1,9 +1,0 @@
-@include keyframes(passing-country) {
-  0%   { background-position: 500px 0; }
-  80%  { background-position: -800px 0; }
-  100% { background-position: -800px 0; }
-}
-
-@mixin animate-landscape {
-  @include animation(passing-country 8s linear 1 0s forwards);
-}

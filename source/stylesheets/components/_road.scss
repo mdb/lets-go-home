@@ -1,8 +1,0 @@
-section.road {
-  height: 500px;
-  display: block;
-  margin-top: $landscape_separator_height;
-  background: #deceb7 image-url('road.png');
-  background-size: 200px 200px;
-  @include animate-landscape;
-}
